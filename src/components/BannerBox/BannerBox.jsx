@@ -13,7 +13,6 @@ const BannerBox = (props) => {
           />
         </Link>
       </div>
-      ;
     </>
   );
 };

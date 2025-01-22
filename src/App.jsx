@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Hedaer/Header";
 import Home from "./Pages/Home/Home";
 import ProductListing from "./Pages/ProductListing/ProductListing";
+import ProductDetail from "./Pages/ProductDetail/ProductDetail";
 
 function App() {
   return (
@@ -15,6 +16,11 @@ function App() {
             path={"/productListing"}
             exact={true}
             element={<ProductListing />}
+          />
+          <Route
+            path={"/product/:id"}
+            exact={true}
+            element={<ProductDetail />}
           />
         </Routes>
       </BrowserRouter>
