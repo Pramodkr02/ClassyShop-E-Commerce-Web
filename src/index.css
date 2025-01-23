@@ -248,3 +248,11 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
   color: rgba(0, 0, 0, 0.7);
 }
+.QuantityBox input {
+  height: 40px !important;
+  width: 100% !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  padding: 8px 8px 8px 12px !important;
+  border-radius: 5px !important;
+  outline: none;
+}

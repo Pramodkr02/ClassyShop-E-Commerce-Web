@@ -5,6 +5,9 @@ import ProductZoom from "../../components/ProductZoom/ProductZoom";
 import Rating from "@mui/material/Rating";
 import { Button } from "@mui/material";
 import QuantityBox from "../../components/QuantityBox/QuantityBox";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { FaRegHeart } from "react-icons/fa6";
+import { BiGitCompare } from "react-icons/bi";
 
 const ProductDetail = () => {
   const [productActionIndex, setProductActionIndex] = useState(null);
@@ -39,9 +42,10 @@ const ProductDetail = () => {
             <ProductZoom />
           </div>
 
-          <div className="productContent w-[60%]">
+          <div className="productContent w-[60%] pr-11">
             <h1 className="text-[22px] font-[600] mb-2">
-              Chikanrai Woven Kurta
+              Chikanrai Woven Kurta Self Design Kurta Self Design Bollywood Net
+              Saree (Blue)
             </h1>
             <div className="items-center flex gap-5">
               <span className="text-gray-400 text-[13px]">
@@ -122,11 +126,46 @@ const ProductDetail = () => {
               </div>
             </div>
 
-            <div className="flex items-center gap-3">
-              <div className="qtyBoxWrapper w-[80px]">
+            <p className="text-[14px] mt-4 mb-3">
+              Free shipping (Est. delivery Time 2-3 days)
+            </p>
+
+            <div className="flex items-center gap-4">
+              <div className="qtyBoxWrapper w-[70px]">
                 <QuantityBox />
               </div>
+              <Button className="btn-org flex gap-2 !min-h-[41px]">
+                <AiOutlineShoppingCart className="text-[20px]" />
+                Add To Cart
+              </Button>
             </div>
+            <div className="flex items-center gap-4 mt-4">
+              <span>
+                <Link className="flex link items-center gap-2 text-[15px] font-[500] cursor-pointer capitalize">
+                  <FaRegHeart className="text-[18px]" />
+                  Add to wishlist
+                </Link>
+              </span>
+              <span>
+                <Link className="flex link items-center gap-2 text-[15px] font-[500] cursor-pointer capitalize">
+                  <BiGitCompare className="text-[18px]" />
+                  compare
+                </Link>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="container !mt-10">
+          <div className="flex items-center gap-8">
+            <span className="link text-[17px] cursor-pointer font-[500]">
+              Discription
+            </span>
+            <span className="link text-[17px] cursor-pointer font-[500]">
+              Product Details
+            </span>
+            <span className="link text-[17px] cursor-pointer font-[500]">
+              Reviews (52)
+            </span>
           </div>
         </div>
       </section>

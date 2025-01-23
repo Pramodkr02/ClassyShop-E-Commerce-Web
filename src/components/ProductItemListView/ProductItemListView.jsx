@@ -1,8 +1,8 @@
 import React from "react";
 import "../ProductItem/ProductItem.css";
 import { FaRegHeart } from "react-icons/fa6";
-import { MdOutlineZoomOutMap } from "react-icons/md";
 import { BiGitCompare } from "react-icons/bi";
+import { MdOutlineZoomOutMap } from "react-icons/md";
 
 import { Link } from "react-router-dom";
 
