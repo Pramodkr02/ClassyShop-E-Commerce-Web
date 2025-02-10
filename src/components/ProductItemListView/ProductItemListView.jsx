@@ -53,7 +53,7 @@ function ProductItemListView() {
         </div>
       </div>
       <div className="info p-3 px-8 py-5 w-[75%]">
-        <h6 className="text-[15px]">
+        <h6 className="text-[15px] !font-[400]">
           <Link className="link transition-all capitalize" to="/">
             soylent Green
           </Link>

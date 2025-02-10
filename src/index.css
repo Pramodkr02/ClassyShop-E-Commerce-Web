@@ -18,6 +18,17 @@ body {
 p {
   font-size: 14px;
   line-height: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
 }
 
 ::-webkit-scrollbar {
@@ -43,12 +54,16 @@ p {
 .btn-org {
   background-color: #ff5252 !important;
   color: white !important;
+  font-size: 16px;
   border-radius: 5px !important;
   padding: 6px 16px !important;
 }
-
 .btn-org:hover {
   background-color: #0a0909e5 !important;
+}
+.btn-lg {
+  font-size: 18px;
+  padding: 10px 16px !important;
 }
 .MuiBadge-badge {
   background-color: #ff5252 !important;
@@ -255,4 +270,15 @@ p {
   padding: 8px 8px 8px 12px !important;
   border-radius: 5px !important;
   outline: none;
+}
+
+.reviewScroll::-webkit-scrollbar {
+  width: 6px !important;
+}
+.reviewScroll::-webkit-scrollbar-thumb {
+  background: #ccc !important;
+}
+
+.cartPanel .MuiPaper-root {
+  width: 400px;
 }
