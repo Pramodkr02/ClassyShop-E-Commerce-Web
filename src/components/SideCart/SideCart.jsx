@@ -172,6 +172,7 @@ const SideCart = ({ openCartPanel, toggleCartPanel }) => {
             </div>
 
             <div className="flex items-center justify-between w-full gap-5 mt-4">
+              <Button className="btn-org btn-lg w-[50%]">View cart</Button>
               <Button className="btn-org btn-lg w-[50%]">checkOut</Button>
             </div>
           </div>

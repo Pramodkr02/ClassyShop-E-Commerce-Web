@@ -46,7 +46,7 @@ const HomeSlider = () => {
           <SwiperSlide>
             <div className="item rounded-[20px] overflow-hidden">
               <img
-                src="https://api.spicezgold.com/download/file_1734524930884_NewProject(6).jpg"
+                src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1735537779_632x160__copy.jpg?im=Resize=(768,200)"
                 alt=""
                 className="w-full"
               />

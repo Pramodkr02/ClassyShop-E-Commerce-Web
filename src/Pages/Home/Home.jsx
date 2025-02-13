@@ -6,10 +6,8 @@ import AdsBannerSlider from "../../components/AdsBannerSlider/AdsBannerSlider";
 
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Box from "@mui/material/Box";
 import ProductSlider from "../../components/ProductSlider/ProductSlider";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
@@ -26,7 +24,7 @@ const Home = () => {
 
   return (
     <>
-      {/* <HomeSlider /> */}
+      <HomeSlider />
 
       <section className="container py-6">
         <div className="w-full flex items-center justify-center">

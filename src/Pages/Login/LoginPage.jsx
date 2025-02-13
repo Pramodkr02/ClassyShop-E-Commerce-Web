@@ -1,12 +1,26 @@
 import { Button, TextField } from "@mui/material";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
+import { MyContext } from "../../App";
 
 const LoginPage = () => {
   const [isShowPassword, setIsShowPassword] = useState(true);
+
+  const [formFields, setFormFields] = useState({
+    email: "",
+    password: "",
+  });
+
+  const context = useContext(MyContext);
+  const history = useNavigate();
+
+  const frogotPassword = () => {
+    context.openAlertBox("success", "OTP Send");
+    history("/verify");
+  };
 
   return (
     <section className="section py-10">
@@ -24,6 +38,7 @@ const LoginPage = () => {
                 label="Email *"
                 variant="outlined"
                 className="w-full"
+                name="email"
               />
             </div>
 
@@ -34,8 +49,10 @@ const LoginPage = () => {
                 label="Password *"
                 variant="outlined"
                 className="w-full"
+                name="password"
               />
               <Button
+                type="submit"
                 onClick={() => setIsShowPassword(!isShowPassword)}
                 className="!absolute top-[10px]    right-[10px] z-50 !w-[35px] !h-[35px] !min-w-[35px] !rounded-full !text-black "
               >
@@ -47,7 +64,10 @@ const LoginPage = () => {
               </Button>
             </div>
 
-            <a className="link cursor-pointer text-[14px] font-[600]">
+            <a
+              className="link cursor-pointer text-[14px] font-[600]"
+              onClick={frogotPassword}
+            >
               Forgot Password?
             </a>
 
