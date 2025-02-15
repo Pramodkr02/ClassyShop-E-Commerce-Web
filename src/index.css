@@ -38,8 +38,9 @@ h6 {
 ::-webkit-scrollbar-thumb {
   background: #ff5252 !important;
 }
+
 ::-webkit-scrollbar-track {
-  background: #fff;
+  background: #ccc;
 }
 
 .container {
@@ -54,17 +55,40 @@ h6 {
 .btn-org {
   background-color: #ff5252 !important;
   color: white !important;
+  font: 500;
   font-size: 16px;
   border-radius: 5px !important;
-  padding: 6px 16px !important;
+  padding: 7px 20px !important;
 }
+
 .btn-org:hover {
   background-color: #0a0909e5 !important;
+}
+
+.btn-org.btn-border {
+  background-color: white !important;
+  color: #ff5252 !important;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 5px !important;
+  padding: 7px 20px !important;
+  border: 1px solid #ff5252 !important;
+}
+.btn-org.btn-border:hover {
+  background-color: #0a0909e5 !important;
+  color: #fff !important;
+  border: 1px solid #ff5252 !important;
 }
 .btn-lg {
   font-size: 18px;
   padding: 10px 16px !important;
 }
+
+.btn-sm {
+  font-size: 12px !important;
+  padding: 5px 16px !important;
+}
+
 .MuiBadge-badge {
   background-color: #ff5252 !important;
 }

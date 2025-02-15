@@ -156,14 +156,18 @@ const Header = () => {
                         <span className="text-[14px]">My Account</span>
                       </MenuItem>
                     </Link>
-                    <MenuItem className="flex gap-2" onClick={handleClose}>
-                      <IoBagCheckOutline className="text-[19px]" />
-                      <span className="text-[14px]">Order</span>
-                    </MenuItem>
-                    <MenuItem className="flex gap-2" onClick={handleClose}>
-                      <IoMdHeartEmpty className="text-[19px]" />
-                      <span className="text-[14px]"> My List</span>
-                    </MenuItem>
+                    <Link to="/my-orders">
+                      <MenuItem className="flex gap-2" onClick={handleClose}>
+                        <IoBagCheckOutline className="text-[19px]" />
+                        <span className="text-[14px]">Order</span>
+                      </MenuItem>
+                    </Link>
+                    <Link to="/my-list">
+                      <MenuItem className="flex gap-2" onClick={handleClose}>
+                        <IoMdHeartEmpty className="text-[19px]" />
+                        <span className="text-[14px]"> My List</span>
+                      </MenuItem>
+                    </Link>
                     <MenuItem className="flex gap-2" onClick={handleClose}>
                       <IoMdLogOut className="text-[19px]" />
                       <span className="text-[14px]">Logout</span>
